@@ -10,7 +10,7 @@ const store = {
   },
 
   mutations: {
-    saveDataFromServer: (state, makes) => ({
+    saveMakesData: (state, makes) => ({
       ...state,
       data: makes,
     }),
