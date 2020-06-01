@@ -1,19 +1,23 @@
 <template>
-  <div id="app"/>
+  <div id="app">
+    <Catalog />
+  </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex';
-
+import Catalog from './components/Catalog';
 export default {
   name: 'App',
   created() {
-    this.loadDataAction();
+    this.getProducts();
   },
-  components: {},
+  components: {
+    Catalog,
+  },
   computed: {},
   methods: {
-    ...mapActions('root/makes', ['loadDataAction']),
+    ...mapActions('products', ['getProducts']),
   },
 };
 </script>
