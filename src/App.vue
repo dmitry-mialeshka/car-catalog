@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Catalog />
+      <Catalog />
   </div>
 </template>
 
@@ -22,7 +22,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+  @import "index";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

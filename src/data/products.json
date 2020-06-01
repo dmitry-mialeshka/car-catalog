@@ -7,7 +7,7 @@
       "models": [
         {
           "model_id": "1",
-          "model_make_id": "audi",
+          "model_make_id": "Audi",
           "model_name": "A3",
           "model_trim": "1.4 TFSi",
           "model_year": "2009",
@@ -35,7 +35,7 @@
         },
         {
           "model_id": "2",
-          "model_make_id": "audi",
+          "model_make_id": "Audi",
           "model_name": "A8",
           "model_trim": "3.0 TDi Quattro L",
           "model_year": "2009",
@@ -63,7 +63,7 @@
         },
         {
           "model_id": "3",
-          "model_make_id": "audi",
+          "model_make_id": "Audi",
           "model_name": "A3",
           "model_trim": "1.8 TFSI Premium 2dr Convertible (1.8L 4cyl Turbo 6AM)",
           "model_year": "2019",

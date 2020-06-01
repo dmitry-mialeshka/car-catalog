@@ -1,7 +1,8 @@
 import products from '../../data/products.json';
 
 const state = () => ({
-  all: []
+  all: [],
+  total: 0,
 });
 
 const getters = {};
@@ -9,6 +10,7 @@ const getters = {};
 const mutations = {
   setProducts (state, products) {
     state.all = products
+    state.total = products.reduce((acc, product) => acc += product.models.length, 0)
   }
 };
 
