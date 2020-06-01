@@ -1,19 +1,21 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div id="app"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapActions } from 'vuex';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  created() {
+    this.loadDataAction();
+  },
+  components: {},
+  computed: {},
+  methods: {
+    ...mapActions('root/makes', ['loadDataAction']),
+  },
+};
 </script>
 
 <style>
