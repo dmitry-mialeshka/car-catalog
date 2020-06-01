@@ -13,7 +13,7 @@ const store = {
   },
 
   actions: {
-    updateStatusAction: ({ commit }, status) => commit("updateStatus", status)
+    updateStatusAction: ({ commit }, status) => commit('updateStatus', status)
   }
 };
 

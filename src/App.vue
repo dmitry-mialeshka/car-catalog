@@ -3,17 +3,17 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions } from 'vuex';
 
 export default {
-  name: "App",
+  name: 'App',
   created() {
     this.loadDataAction();
   },
   components: {},
   computed: {},
   methods: {
-    ...mapActions("root/makes", ["loadDataAction"]),
+    ...mapActions('root/makes', ['loadDataAction']),
   },
 };
 </script>
