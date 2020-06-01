@@ -8,30 +8,30 @@
         {
           "model_id": "1",
           "model_make_id": "audi",
-          "model_name": "A3", // модель
-          "model_trim": "1.4 TFSi", //отделка
-          "model_year": "2009", //год
-          "model_body": "Hatchback", // тип кузова
-          "model_engine_position": "Front", //расположение двигателя
-          "model_engine_cc": "1390", //объем двигателя
-          "model_engine_cyl": "4", // кол-во цилиндров
-          "model_engine_type": "in-line", //тип двигателя
-          "model_engine_fuel": "Gasoline - Premium", //Тип топлива двигателя
-          "model_top_speed_kph": "203", //Максимальная скорость
-          "model_0_to_100_kph": "9.3", //время разгона c 0 до 100 км
-          "model_drive": "Front", //привод
-          "model_transmission_type": "Manual", //тип трансмиссии
-          "model_seats": "5", //кол-во сидений
-          "model_doors": "3",  // кол-во дверей
-          "model_weight_kg": "1302", //Вес (кг)
-          "model_length_mm": "4250", //Длина (мм)
-          "model_width_mm": "1770",  //Ширина (мм)
-          "model_height_mm": "1430", //Высота (мм)
-          "model_wheelbase_mm": "2580", //Колесная база(мм)
-          "model_lkm_hwy": null, //расход топлива трасса
-          "model_lkm_mixed": "5.6", //расход топлива средний
-          "model_lkm_city": null,  //расход топлива город
-          "model_fuel_cap_l": "55" //емкость бака(л)
+          "model_name": "A3",
+          "model_trim": "1.4 TFSi",
+          "model_year": "2009",
+          "model_body": "Hatchback",
+          "model_engine_position": "Front",
+          "model_engine_cc": "1390",
+          "model_engine_cyl": "4",
+          "model_engine_type": "in-line",
+          "model_engine_fuel": "Gasoline - Premium",
+          "model_top_speed_kph": "203",
+          "model_0_to_100_kph": "9.3",
+          "model_drive": "Front",
+          "model_transmission_type": "Manual",
+          "model_seats": "5",
+          "model_doors": "3",
+          "model_weight_kg": "1302",
+          "model_length_mm": "4250",
+          "model_width_mm": "1770",
+          "model_height_mm": "1430",
+          "model_wheelbase_mm": "2580",
+          "model_lkm_hwy": null,
+          "model_lkm_mixed": "5.6",
+          "model_lkm_city": null,
+          "model_fuel_cap_l": "55"
         },
         {
           "model_id": "2",
@@ -206,7 +206,7 @@
           "model_lkm_hwy": "37.0",
           "model_lkm_mixed": "29.0",
           "model_lkm_city": "25.0",
-          "model_fuel_cap_l": "18",
+          "model_fuel_cap_l": "18"
         }
       ]
     },

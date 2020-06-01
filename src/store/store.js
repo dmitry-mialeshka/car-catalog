@@ -9,14 +9,17 @@ import loader from "./modules/loader";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  root: {
-    namespaced: true,
-    getters,
-    actions,
-    mutations,
-    modules: {
-      loader,
-      makes,
+  modules: {
+    strict: true,
+    root: {
+      namespaced: true,
+      getters,
+      actions,
+      mutations,
+      modules: {
+        loader,
+        makes,
+      },
     },
   },
 });

@@ -1,5 +1,4 @@
-import {loadJSON} from '../../services/remote';
-
+import makes from "../../data/makes.json";
 const store = {
   namespaced: true,
   state: {
@@ -19,19 +18,15 @@ const store = {
 
   actions: {
     loadDataAction: ({ commit, dispatch }) => {
-      dispatch("root/loader/updateStatusAction", true, { root: true });
-      const localMakes = JSON.parse(localStorage.getItem('makes'));
+      dispatch('root/loader/updateStatusAction', true, { root: true });
+      const localMakes = localStorage.getItem('makes');
       if (localMakes) {
-        commit('saveMakesData', localMakes);
-        dispatch('root/loader/updateStatusAction', false, { root: true });
+        commit('saveMakesData', JSON.parse(localMakes));
+        dispatch("root/loader/updateStatusAction", false, { root: true });
       } else {
-        loadJSON('../../../data/makes.json')
-          .then((makes) => {
-            commit('saveMakesData', makes);
-            localStorage.setItem('makes', JSON.stringify(makes));
-            dispatch('root/loader/updateStatusAction', false, { root: true });
-          })
-          .catch((err) => console.log(err));
+        commit('saveMakesData', makes);
+        localStorage.setItem('makes', JSON.stringify(makes));
+        dispatch('root/loader/updateStatusAction', false, { root: true });
       }
     },
   },
