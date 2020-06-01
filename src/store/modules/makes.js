@@ -1,4 +1,5 @@
-import * as fs from "fs";
+import {loadJSON} from '../../services/remote';
+
 const store = {
   namespaced: true,
   state: {
@@ -19,28 +20,21 @@ const store = {
   actions: {
     loadDataAction: ({ commit, dispatch }) => {
       dispatch("root/loader/updateStatusAction", true, { root: true });
-      loadJSON("../../../data/makes.json")
-        .then((makes) => {
-          commit("saveMakesData", makes);
-          dispatch("root/loader/updateStatusAction", false, { root: true });
-        })
-        .catch((err) => console.log(err));
+      const localMakes = JSON.parse(localStorage.getItem('makes'));
+      if (localMakes) {
+        commit('saveMakesData', localMakes);
+        dispatch('root/loader/updateStatusAction', false, { root: true });
+      } else {
+        loadJSON('../../../data/makes.json')
+          .then((makes) => {
+            commit('saveMakesData', makes);
+            localStorage.setItem('makes', JSON.stringify(makes));
+            dispatch('root/loader/updateStatusAction', false, { root: true });
+          })
+          .catch((err) => console.log(err));
+      }
     },
   },
 };
-const loadJSON = (filepath) => {
-  return new Promise((resolve, reject) => {
-    fs.readFile(filepath, "utf8", (err, content) => {
-      if (err) {
-        reject(err);
-      } else {
-        try {
-          resolve(JSON.parse(content));
-        } catch (err) {
-          reject(err);
-        }
-      }
-    });
-  });
-};
+
 export default store;
