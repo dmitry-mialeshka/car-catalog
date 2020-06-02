@@ -3,10 +3,7 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import App from './App.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import store from './store/store';
-
+import store from './store'
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
