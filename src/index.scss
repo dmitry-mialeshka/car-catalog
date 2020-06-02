@@ -1,4 +1,5 @@
 $enable-responsive-font-sizes: true;
+$fa-font-path: "~font-awesome/fonts";
 @import '~bootstrap';
 @import '~bootstrap-vue';
-@import "~font-awesome/css/font-awesome.min.css";
+@import "~font-awesome/scss/font-awesome";

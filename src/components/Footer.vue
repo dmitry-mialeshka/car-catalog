@@ -1,13 +1,12 @@
 <template>
-    <footer id="sticky-footer" class="py-4 bg-primary text-white-50">
-        <div class="container text-center">
+    <footer id="" class="py-4 bg-primary text-white">
+        <div class="container ">
             <div class="row">
-                <div class="col">
-                    <div class="eee">
-                        <small>&copy;IntexSoft, car-catalog UI</small>
-                    </div>
+                <div class="col-md-4"/>
+                <div class="col-md-4">
+                    <small>&copy;IntexSoft, car-catalog UI</small>
                 </div>
-                <div class="col">
+                <div class="col-md-4">
                         <a href="https://www.facebook.com/Intexsoft.Life" class="fa fa-facebook"></a>
                         <a href="https://twitter.com/intexsoft" class="fa fa-twitter"></a>
                         <a href="https://www.instagram.com/intexsoft_life" class="fa fa-instagram"></a>
@@ -36,4 +35,5 @@ export default {
 .fa:hover {
     opacity: 0.7;
 }
+
 </style>
