@@ -1,12 +1,15 @@
 <template>
   <div id="app">
       <Catalog />
+      <Footer />
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex';
 import Catalog from './components/Catalog';
+import Footer from './components/Footer';
+
 export default {
   name: 'App',
   created() {
@@ -14,6 +17,7 @@ export default {
   },
   components: {
     Catalog,
+    Footer
   },
   computed: {},
   methods: {
