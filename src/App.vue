@@ -1,23 +1,27 @@
 <template>
   <div id="app">
-      <Catalog />
+    <SearchFilter/>
+    <Catalog />
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex';
 import Catalog from './components/Catalog';
+import SearchFilter from "./components/SearchFilter";
+
 export default {
   name: 'App',
   created() {
-    this.getProducts();
+    this.setProducts();
   },
   components: {
+    SearchFilter,
     Catalog,
   },
   computed: {},
   methods: {
-    ...mapActions('products', ['getProducts']),
+    ...mapActions('products', ['setProducts']),
   },
 };
 </script>
