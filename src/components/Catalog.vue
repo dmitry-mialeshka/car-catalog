@@ -10,10 +10,7 @@
           <b-card-text class="align-bottom">
             <div class="row">
               <div class="col-sm-12">
-                <span>{{ model.model_year }}</span>
-              </div>
-              <div class="col-sm-12">
-                <span>{{ model.model_make_id }} {{ model.model_name }}</span>
+                <span><strong>{{ model.model_make_id }} {{ model.model_name }}, <span>{{ model.model_year }}</span></strong></span>
               </div>
               <div class="col-sm-12 text-truncate">
                 <span>{{ model.model_transmission_type }}, {{ model.model_trim }}, {{ model.model_engine_fuel }}</span>
