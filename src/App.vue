@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <SearchFilter/>
+    <SearchFilter />
     <Catalog />
+    <Footer />
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex';
 import Catalog from './components/Catalog';
-import SearchFilter from "./components/SearchFilter";
+import Footer from './components/Footer';
+import SearchFilter from './components/SearchFilter';
 
 export default {
   name: 'App',
@@ -18,6 +20,7 @@ export default {
   components: {
     SearchFilter,
     Catalog,
+    Footer
   },
   computed: {},
   methods: {
@@ -28,12 +31,17 @@ export default {
 
 <style lang="scss">
   @import "index";
+html, body {
+  height: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 </style>

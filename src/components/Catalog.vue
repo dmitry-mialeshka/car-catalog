@@ -5,8 +5,8 @@
       <div v-for="model in list" :key="model.id">
         <b-card img-src="https://static.av.by/images/noimage.png"
                 img-top
-                img-alt="Card image"
-                class="mb-3">
+                img-alt="Car"
+                class="col">
           <b-card-text class="align-bottom">
             <div class="row">
               <div class="col-sm-12">
