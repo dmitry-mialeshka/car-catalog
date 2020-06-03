@@ -3,6 +3,7 @@
     {
       "_id": "5ed27985422bdca7f0432b5e",
       "make": "Audi",
+      "description": "The German company is part of the Volkswagen Group. Headquarters - The apartment is located in Germany (Ingolstadt). As a logo, 4 rings are used, symbolizing the number of independent automakers: Audi, DKV, Horch and Vanderer. Audi specialized in sports cars, Horch - on premium cars, DKV - on motorcycles, Wanderer - on cars of the middle segment.\n\nThe first car (labeled \"A\") was released in 1910. The brand made a loud statement about itself when developing an all-wheel drive model; earlier, all-wheel drive was used only on trucks. Next, there was a car with a fully galvanized body - Audi 80 B3. The all-aluminum body is still considered the hallmark of the brand. The concern has 17 production sites in 13 countries. The company employs up to 85,000 people.\n\nTwo all-wheel drive brand models won in 2008, in the competition “4-4 of the Year 2008”. These are the Audi R8 and Audi A4 quattro. In the ranking of the most popular and reliable models of the brand, you can find Audi Q5, Audi A6 C5. On the roads there are Audi legends - A80 and A100 / A6. Since 2006, an advertising confrontation between BMW and Audi has been going on.",
       "make_country": "Germany",
       "models": [
         {
@@ -31,7 +32,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "5.6",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "55"
+          "model_fuel_cap_l": "55",
+          "price": "30910"
         },
         {
           "model_id": "2",
@@ -59,7 +61,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "8.4",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "90"
+          "model_fuel_cap_l": "90",
+          "price_dol": "30910"
         },
         {
           "model_id": "3",
@@ -87,7 +90,8 @@
           "model_lkm_hwy": "35.0",
           "model_lkm_mixed": "28.0",
           "model_lkm_city": "24.0",
-          "model_fuel_cap_l": "13"
+          "model_fuel_cap_l": "13",
+          "price_dol": "109780"
         }
       ]
     },
@@ -95,6 +99,7 @@
       "_id": "5ed2781a3bd533d33b360b39",
       "make": "Volvo",
       "make_country": "Sweden",
+      "description": "The Swedish company has been manufacturing cars since 1927. Since 2010, the brand has become part of the Geely Automobile holding. Headquarters - The apartment is located in Gothenburg (Sweden). In 2015, more than 500,000 Volvo cars were sold worldwide. The best-selling model was the Volvo XC60. The largest export markets are Sweden, China, USA, Germany, Great Britain.\n\nManufacturers constantly experimented with the technical equipment of the car. Installed new filters in the cabin with a self-cleaning system. Introduced DSTC Stabilization, an advanced seat belt system. The main production facilities are located in Sweden, China, Belgium. The basic concept of the brand is that beauty must be combined with functionality. The taillights are Volvo's exclusive design. Scandinavian-style interior and ergonomic signature seats. In 2005, Volvo became SUPERBRANDS.",
       "models": [
         {
           "model_id": "4",
@@ -122,7 +127,8 @@
           "model_lkm_hwy": "29.0",
           "model_lkm_mixed": "23.0",
           "model_lkm_city": "20.0",
-          "model_fuel_cap_l": "18"
+          "model_fuel_cap_l": "18",
+          "price_dol": "64985"
         },
         {
           "model_id": "5",
@@ -150,7 +156,8 @@
           "model_lkm_hwy": "29.0",
           "model_lkm_mixed": "23.0",
           "model_lkm_city": "20.0",
-          "model_fuel_cap_l": "18"
+          "model_fuel_cap_l": "18",
+          "price_dol": "63304"
         },
         {
           "model_id": "6",
@@ -178,7 +185,8 @@
           "model_lkm_hwy": "37.0",
           "model_lkm_mixed": "29.0",
           "model_lkm_city": "25.0",
-          "model_fuel_cap_l": "18"
+          "model_fuel_cap_l": "18",
+          "price_dol": "74955"
         },
         {
           "model_id": "7",
@@ -206,7 +214,8 @@
           "model_lkm_hwy": "37.0",
           "model_lkm_mixed": "29.0",
           "model_lkm_city": "25.0",
-          "model_fuel_cap_l": "18"
+          "model_fuel_cap_l": "18",
+          "price_dol": "68565"
         }
       ]
     },
@@ -214,6 +223,7 @@
       "_id": "5ed2797d0bbc2f057f680c34",
       "make": "Kia",
       "make_country": "South Korea",
+      "description": "Since 1944, the South Korean company Kyungsung Precision Industry has been manufacturing scooters and bicycles. Later, the first Brisa passenger car appeared - in 1973. The brand changed its name to a more harmonious Kia. They decided to abandon the production of motorcycles. In 1997, a merger took place, as a result of which the Hyundai Kia Automotive Group was born. Headquarters - located in Seoul. Factories are found in Europe and Asia. In Russia, Kia cars are produced by IzhAvto OJSC.\n\nThe brand produces, in addition to cars, commercial vehicles. In the golf class is the Cerato sedan. In business class - Opirus and Magentis. In the off-road segment, Sorento and Sportage. Also in the range of Kia there is a minivan - Carnival. Cars are sold in 170 countries. Sales volume - 650,000 cars per year.\n\nPopular models are KIA Rio, KIA Sportage, KIA Cee’d. The brand stands out for its affordable cost and original bright design. KIA accounts for 7.9% of auto sales in Russia. Korean cars come with improved navigation technology and audio. In the annual ranking of JD Power, the KIA brand has established itself as a reliable. Mark got to 2 place of honor, passing Porsche ahead.",
       "models": [
         {
           "model_id": "8",
@@ -241,7 +251,8 @@
           "model_lkm_hwy": "28.0",
           "model_lkm_mixed": "22.0",
           "model_lkm_city": "19.0",
-          "model_fuel_cap_l": "19"
+          "model_fuel_cap_l": "19",
+          "price_dol": "33100"
         },
         {
           "model_id": "9",
@@ -269,7 +280,8 @@
           "model_lkm_hwy": "28.0",
           "model_lkm_mixed": "22.0",
           "model_lkm_city": "19.0",
-          "model_fuel_cap_l": "19"
+          "model_fuel_cap_l": "19",
+          "price_dol": "37100"
         },
         {
           "model_id": "10",
@@ -297,7 +309,8 @@
           "model_lkm_hwy": "36.0",
           "model_lkm_mixed": "29.0",
           "model_lkm_city": "25.0",
-          "model_fuel_cap_l": "13"
+          "model_fuel_cap_l": "13",
+          "price_dol": "3800"
         },
         {
           "model_id": "11",
@@ -325,7 +338,8 @@
           "model_lkm_hwy": "33.0",
           "model_lkm_mixed": "28.0",
           "model_lkm_city": "25.0",
-          "model_fuel_cap_l": "13"
+          "model_fuel_cap_l": "13",
+          "price_dol": "18846"
         }
       ]
     },
@@ -333,6 +347,7 @@
       "_id": "5ed2798df66766707a513884",
       "make": "Peugeot",
       "make_country": "France",
+      "description":"Peugeot is a French brand that is part of the PSA Peugeot Citroën. The company is the largest manufacturer of light commercial vehicles in Europe. The brand distinguishes itself in the production of low-emission cars. The history of the company began with the release of mills, coffee grinders, bicycles. And the first Peugeot was presented by a steam three-wheeled machine. Further, the brand has shifted its focus to green technology. In 2010, the world saw the Peugeot iOn electric car with a lithium-ion battery. A year later, Peugeot 3008 came out with a hybrid diesel engine and a STOP & START system. A 1.6-liter gasoline engine wins the Best Engine nomination for three consecutive years. Currently, the brand plans to capture the markets of China, South America and Russia. In 2011, the brand returned to the Indian market by building a factory in Gujarat. The brand is present in 160 countries.",
       "models": [
         {
           "model_id": "12",
@@ -360,7 +375,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "6.6",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "40"
+          "model_fuel_cap_l": "40",
+          "price_dol": "3716"
         },
         {
           "model_id": "13",
@@ -388,7 +404,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "4.6",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "35"
+          "model_fuel_cap_l": "35",
+          "price_dol": "4710"
         }
       ]
     },
@@ -396,6 +413,7 @@
       "_id": "5ed279991418c41458e779b7",
       "make": "Renault",
       "make_country": "France",
+      "description": "The French automaker produces cars, sports cars and trucks. The brand is considered one of the largest in the country. The first car was released in 1898. The brand has identified itself in history as a manufacturer of a gearbox, where torque to the rear wheel pair was transmitted by a shaft with hinges. This scheme is used today in rear-wheel drive cars. Renault also produce buses. Since 1979, the company begins introducing machines into the American market. A sought-after Renault 9 model appears, which becomes the car of the year. Sports models win prestigious races: “Paris-Dakar”, “Formula 1” and others.\n\nRenault cars are famous for their good suspension and low fuel consumption. Modern cars are available to customers in more than 100 countries. Factories are located in France, Brazil, Russia, Colombia. In Russia, the brand has won titles many times according to automobile magazines.",
       "models": [
         {
           "model_id": "14",
@@ -423,7 +441,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": null,
           "model_lkm_city": null,
-          "model_fuel_cap_l": "50"
+          "model_fuel_cap_l": "50",
+          "price_dol": "8604"
         },
         {
           "model_id": "15",
@@ -451,7 +470,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "6.6",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "55"
+          "model_fuel_cap_l": "55",
+          "price_dol": "14975"
         },
         {
           "model_id": "16",
@@ -479,7 +499,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "4.4",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "55"
+          "model_fuel_cap_l": "55",
+          "price_dol": "17575"
         }
       ]
     },
@@ -487,6 +508,7 @@
       "_id": "skoda",
       "make": "Skoda",
       "make_country": "Czech Republic",
+      "description": "The Czech company produces cars. The central office is located in the city of Mlada Boleslav (Czech Republic). The history of the brand dates back to 1895. The first Voiturette A car was launched in 1905. Skoda entered the Volkswagen Group holding. And in 2006, it became its most profitable division. The heart of the brand was occupied by models - Škoda Octavia and Škoda Octavia Combi. In Russia, cars are produced in Kaluga and Nizhny Novgorod. In Russia, the brand has repeatedly become the car of the year. Since 2006, the Skoda brand has hit the Guinness Book of Records. The factories where Skoda cars are manufactured are located in Slovakia, Germany, Ukraine, India, Kazakhstan and other countries.\n\nModern Skoda models: - Rapid liftback (2019); - Octavia liftback (2019); - liftback Superb (3rd generation). Most of the Czech population rides Skoda cars. The difference between the brand in a spacious and thoughtful interior, roomy trunk. The company's profit in 2016 amounted to 1.2 billion euros. 80% of cars are exported abroad. The most popular cars in China, Germany and Russia.",
       "models": [
         {
           "model_id": "17",
@@ -514,7 +536,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "5.9",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "45"
+          "model_fuel_cap_l": "45",
+          "price_dol": "37100"
         },
         {
           "model_id": "18",
@@ -542,7 +565,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "6.0",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "45"
+          "model_fuel_cap_l": "45",
+          "price_dol": "4359"
         },
         {
           "model_id": "19",
@@ -570,7 +594,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "6.1",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "45"
+          "model_fuel_cap_l": "45",
+          "price_dol": "4575"
         }
       ]
     },
@@ -578,6 +603,7 @@
       "_id": "5ed279a27559b00026f9ac2b",
       "make": "Citroen",
       "make_country": "France",
+      "description": "The creator of the brand has relied on affordable cars. Comfort and safety at an affordable price. This rule applies both to the first model in the lineup - Type A, and to the modern powerful crossover Citroën C5 Aircross (sales start June 2019). In 2010, the company opened 88 showrooms in Brussels, where the first electric car, the Citroën C-Zéro, was introduced.\n\nCitroen is the first company to offer the world a service - Multicity, which helps comfortable movement. In 2012, two models are produced - Citroën C4 Sedan and C-Elysée mainly for the Chinese and Russian markets. In 2015, the brand receives an award in the category \"Best Engine of the Year\". The invention was the turbocharged 3-cylinder PureTech. This engine will carry the title of “best” for 4 years in a row. The company received the title 3 times in the WTCC World Championship.\n\nThe most popular models are the roomy Citroen C2, Citroen C3 (with many features), Citroen Berlingo (with an extra side door), Citroen C4 (elegant design + interior comfort).",
       "models": [
         {
           "model_id": "20",
@@ -605,7 +631,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "8.1",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "55"
+          "model_fuel_cap_l": "55",
+          "price_dol": "5643"
         },
         {
           "model_id": "49683",
@@ -633,7 +660,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "7.1",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "55"
+          "model_fuel_cap_l": "55",
+          "price_dol": "6846"
         },
         {
           "model_id": "21",
@@ -661,7 +689,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": "8.2",
           "model_lkm_city": null,
-          "model_fuel_cap_l": "60"
+          "model_fuel_cap_l": "60",
+          "price_dol": "7323"
         }
       ]
     },
@@ -669,6 +698,7 @@
       "_id": "5ed279ab4f0f162bb72685f2",
       "make": "Hyundai",
       "make_country": "South Korea",
+      "description": "The history of the South Korean brand began in 1967. The shipbuilding company began to expand the specification. The Hyundai Motor Company holding appeared. Cars were licensed by Ford Motor Company. But in 1972, the company received permission to make cars according to its own developments. The first car is Hyundai Pony.\n\nIn 1998, two brands merged into one final product — the Hyundai Kia Automotive Group. The company's lineup includes: - hatchbacks; - crossovers; - off-road vehicles; - convertibles; - minivans and minibuses.\n\nBrand ideology — affordable price with wide functionality. Popular models are Hyunda Accent and Solaris. Cars are famous for low fuel consumption. Advantages of Honda cars — stiffer suspension and excellent shock absorbers. The bottom is covered with an anti-gravel compound. For the production of machines using steel from their own steel mills. The company introduced a lithium polymer battery. Also, the company was the first in the world to install an eight-speed gearbox on a car with rear-wheel drive.\n\nHyundai Motors deservedly bears the title of world leading automaker. Export covers 193 countries (China, Russia, India and others). The company also creates buses, power units.",
       "models": [
         {
           "model_id": "22",
@@ -696,7 +726,8 @@
           "model_lkm_hwy": "37.0",
           "model_lkm_mixed": "30.0",
           "model_lkm_city": "26.0",
-          "model_fuel_cap_l": "11"
+          "model_fuel_cap_l": "11",
+          "price_dol": "11456"
         },
         {
           "model_id": "23",
@@ -724,7 +755,8 @@
           "model_lkm_hwy": "38.0",
           "model_lkm_mixed": "31.0",
           "model_lkm_city": "27.0",
-          "model_fuel_cap_l": "11"
+          "model_fuel_cap_l": "11",
+          "price_dol": "12565"
         },
         {
           "model_id": "24",
@@ -752,7 +784,8 @@
           "model_lkm_hwy": "37.0",
           "model_lkm_mixed": "30.0",
           "model_lkm_city": "26.0",
-          "model_fuel_cap_l": "11"
+          "model_fuel_cap_l": "11",
+          "price_dol": "16034"
         },
         {
           "model_id": "25",
@@ -780,7 +813,8 @@
           "model_lkm_hwy": "38.0",
           "model_lkm_mixed": "31.0",
           "model_lkm_city": "27.0",
-          "model_fuel_cap_l": "11"
+          "model_fuel_cap_l": "11",
+          "price_dol": "17494"
         }
       ]
     },
@@ -788,6 +822,7 @@
       "_id": "5ed279d47e776183b469bf95",
       "make": "Suzuki",
       "make_country": "Japan",
+      "description": "Bren from Japan focused on all-wheel drive cars, all-terrain vehicles, motorcycles, and internal combustion engines. The company was founded in 1909. At the same time, the creator of the brand opened a weaving machine factory. The first front-wheel drive car Suzulight came out only in 1955. The company did not abandon the production of motorcycles. In 1967, a Suzuki motorcycle factory was opened in Thailand.",
       "models": [
         {
           "model_id": "26",
@@ -815,7 +850,8 @@
           "model_lkm_hwy": null,
           "model_lkm_mixed": null,
           "model_lkm_city": null,
-          "model_fuel_cap_l": "66"
+          "model_fuel_cap_l": "66",
+          "price_dol": "12040"
         },
         {
           "model_id": "2",
@@ -843,7 +879,8 @@
           "model_lkm_hwy": "9.4",
           "model_lkm_mixed": null,
           "model_lkm_city": "12.4",
-          "model_fuel_cap_l": "66"
+          "model_fuel_cap_l": "66",
+          "price_dol": "34235"
         }
       ]
     }

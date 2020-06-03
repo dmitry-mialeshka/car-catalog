@@ -45,14 +45,9 @@
       }
     },
     computed: {
-      ...mapState({
-        loading: state => state.products.loadnig,
-        products: state => state.products.all,
-        searchProducts: state => state.products.searchProducts,
-        total: state => state.products.total,
-      }),
+      ...mapState({ products: state => state.products.all, total: state => state.products.total }),
       list () {
-        const items = this.searchProducts.map(p => p.models).reduce((acc, arr) => acc.concat(...arr), []);
+        const items = this.products.map(p => p.models).reduce((acc, arr) => acc.concat(...arr), []);
         return items.slice(
           (this.currentPage - 1) * this.perPage,
           this.currentPage * this.perPage

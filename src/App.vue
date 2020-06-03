@@ -15,16 +15,15 @@ import SearchFilter from './components/SearchFilter';
 export default {
   name: 'App',
   created() {
-    this.setProducts();
+    this.getProducts();
   },
   components: {
-    SearchFilter,
     Catalog,
     Footer
   },
   computed: {},
   methods: {
-    ...mapActions('products', ['setProducts']),
+    ...mapActions('products', ['getProducts']),
   },
 };
 </script>
