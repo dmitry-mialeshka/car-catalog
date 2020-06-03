@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <SearchFilter />
     <Catalog />
     <Footer />
   </div>
@@ -9,6 +10,7 @@
 import { mapActions } from 'vuex';
 import Catalog from './components/Catalog';
 import Footer from './components/Footer';
+import SearchFilter from './components/SearchFilter';
 
 export default {
   name: 'App',
