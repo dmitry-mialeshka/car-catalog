@@ -1,6 +1,6 @@
 <template>
-    <footer id="" class="py-4 bg-primary text-white">
-        <div class="container ">
+    <footer class="mt-auto py-4 bg-primary text-white">
+        <div class="container">
             <div class="row">
                 <div class="col-md-4"/>
                 <div class="col-md-4">

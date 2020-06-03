@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-      <div class="page-content">
-      <Catalog />
-      </div>
-      <Footer />
+    <Catalog />
+    <Footer />
   </div>
 </template>
 
@@ -30,15 +28,17 @@ export default {
 
 <style lang="scss">
   @import "index";
+html, body {
+  height: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
-.page-content{
-    min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 </style>
