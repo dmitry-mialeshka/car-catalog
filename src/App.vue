@@ -1,29 +1,25 @@
 <template>
   <div id="app">
-      <Catalog />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import Catalog from './components/Catalog';
+import { mapActions } from "vuex";
 export default {
-  name: 'App',
+  name: "App",
   created() {
     this.getProducts();
   },
-  components: {
-    Catalog,
-  },
   computed: {},
   methods: {
-    ...mapActions('products', ['getProducts']),
+    ...mapActions("products", ["getProducts"]),
   },
 };
 </script>
 
 <style lang="scss">
-  @import "index";
+@import "index";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
