@@ -37,10 +37,13 @@
 </template>
 
 <script>
-import { mapState} from 'vuex';
+  import {mapActions, mapState} from 'vuex';
 
   export default {
     name: "Catalog",
+    created() {
+      this.getProducts();
+    },
     data() {
       return {
         perPage: 6,
@@ -56,7 +59,10 @@ import { mapState} from 'vuex';
           this.currentPage * this.perPage
         )
       },
-  }
+  },
+    methods: {
+      ...mapActions("products", ["getProducts"]),
+    },
   }
 </script>
 <style scoped>
