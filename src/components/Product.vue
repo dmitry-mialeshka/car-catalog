@@ -72,9 +72,8 @@ export default {
   created() {
       this.getProducts()
       this.getProduct(this.$route.params)
-      const{ model_make_id, model_id, ...make }=this.product
-      const abjArr = Object.entries(make);
-      this.items=abjArr.map(([key, value]) => ({characteristic:key,value:value || 'none'}));
+      const { model_make_id,...make } = this.product
+      this.items = Object.entries(make).filter(([key,]) => key !== 'model_id').map(([key, value]) => ({ characteristic: key, value: value || 'none' }));
       this.make=this.products.find((make)=>make._id===model_make_id)
   },
     data() {
