@@ -8,7 +8,8 @@
       "models": [
         {
           "model_id": "1",
-          "model_make_id": "Audi",
+          "model_make_name": "Audi",
+          "model_make_id": "5ed27985422bdca7f0432b5e",
           "model_name": "A3",
           "model_trim": "1.4 TFSi",
           "model_year": "2009",
@@ -37,7 +38,8 @@
         },
         {
           "model_id": "2",
-          "model_make_id": "Audi",
+          "model_make_name": "Audi",
+          "model_make_id": "5ed27985422bdca7f0432b5e",
           "model_name": "A8",
           "model_trim": "3.0 TDi Quattro L",
           "model_year": "2009",
@@ -66,7 +68,8 @@
         },
         {
           "model_id": "3",
-          "model_make_id": "Audi",
+          "model_make_name": "Audi",
+          "model_make_id": "5ed27985422bdca7f0432b5e",
           "model_name": "A3",
           "model_trim": "1.8 TFSI Premium 2dr Convertible (1.8L 4cyl Turbo 6AM)",
           "model_year": "2019",
@@ -76,7 +79,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Premium Unleaded (Recommended)",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "323",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automated Manual",
@@ -103,7 +106,8 @@
       "models": [
         {
           "model_id": "4",
-          "model_make_id": "Volvo",
+          "model_make_name": "Volvo",
+          "model_make_id": "5ed2781a3bd533d33b360b39",
           "model_name": "S60",
           "model_trim": "T5 4dr Sedan AWD (2.5L 5cyl Turbo 6A)",
           "model_year": "2019",
@@ -113,7 +117,7 @@
           "model_engine_cyl": "5",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "285",
           "model_0_to_100_kph": null,
           "model_drive": "All Wheel Drive",
           "model_transmission_type": "Automatic",
@@ -132,7 +136,8 @@
         },
         {
           "model_id": "5",
-          "model_make_id": "Volvo",
+          "model_make_name": "Volvo",
+          "model_make_id": "5ed2781a3bd533d33b360b39",
           "model_name": "S60",
           "model_trim": "T5 4dr Sedan AWD w/Prod. End 6/14 (2.5L 5cyl Turbo 6A)",
           "model_year": "2019",
@@ -161,7 +166,8 @@
         },
         {
           "model_id": "6",
-          "model_make_id": "Volvo",
+          "model_make_name": "Volvo",
+          "model_make_id": "5ed2781a3bd533d33b360b39",
           "model_name": "S60",
           "model_trim": "T5 Drive-E 4dr Sedan (2.0L 4cyl Turbo 8A)",
           "model_year": "2019",
@@ -171,7 +177,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "250",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automatic",
@@ -190,7 +196,8 @@
         },
         {
           "model_id": "7",
-          "model_make_id": "Volvo",
+          "model_make_name": "Volvo",
+          "model_make_id": "5ed2781a3bd533d33b360b39",
           "model_name": "S60",
           "model_trim": "T5 Drive-E 4dr Sedan w/Prod. End 6/14 (2.0L 4cyl Turbo 8A)",
           "model_year": "2019",
@@ -200,7 +207,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "245",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automatic",
@@ -214,8 +221,7 @@
           "model_lkm_hwy": "37.0",
           "model_lkm_mixed": "29.0",
           "model_lkm_city": "25.0",
-          "model_fuel_cap_l": "18",
-          "price_dol": "68565"
+          "model_fuel_cap_l": "18"
         }
       ]
     },
@@ -227,7 +233,8 @@
       "models": [
         {
           "model_id": "8",
-          "model_make_id": "Kia",
+          "model_make_name": "Kia",
+          "model_make_id": "5ed2797d0bbc2f057f680c34",
           "model_name": "Cadenza",
           "model_trim": "Limited 4dr Sedan (3.3L 6cyl 6A)",
           "model_year": "2018",
@@ -237,7 +244,7 @@
           "model_engine_cyl": "6",
           "model_engine_type": "V",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "240",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automatic",
@@ -256,7 +263,8 @@
         },
         {
           "model_id": "9",
-          "model_make_id": "Kia",
+          "model_make_name": "Kia",
+          "model_make_id": "5ed2797d0bbc2f057f680c34",
           "model_name": "Cadenza",
           "model_trim": "Premium 4dr Sedan (3.3L 6cyl 6A)",
           "model_year": "2018",
@@ -266,7 +274,7 @@
           "model_engine_cyl": "6",
           "model_engine_type": "V",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "310",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automatic",
@@ -285,7 +293,8 @@
         },
         {
           "model_id": "10",
-          "model_make_id": "Kia",
+          "model_make_name": "Kia",
+          "model_make_id": "5ed2797d0bbc2f057f680c34",
           "model_name": "Forte",
           "model_trim": "EX 4dr Sedan (2.0L 4cyl 6A)",
           "model_year": "2018",
@@ -295,7 +304,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "253",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automatic",
@@ -314,7 +323,8 @@
         },
         {
           "model_id": "11",
-          "model_make_id": "Kia",
+          "model_make_name": "Kia",
+          "model_make_id": "5ed2797d0bbc2f057f680c34",
           "model_name": "Forte",
           "model_trim": "Forte5 EX 4dr Hatchback (2.0L 4cyl 6A)",
           "model_year": "2018",
@@ -324,7 +334,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "220",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automatic",
@@ -351,7 +361,8 @@
       "models": [
         {
           "model_id": "12",
-          "model_make_id": "peugeot",
+          "model_make_name": "peugeot",
+          "model_make_id": "5ed2798df66766707a513884",
           "model_name": "1007",
           "model_trim": "1.6",
           "model_year": "2012",
@@ -380,7 +391,8 @@
         },
         {
           "model_id": "13",
-          "model_make_id": "peugeot",
+          "model_make_name": "peugeot",
+          "model_make_id": "5ed2798df66766707a513884",
           "model_name": "107",
           "model_trim": "1.0i",
           "model_year": "2012",
@@ -417,7 +429,8 @@
       "models": [
         {
           "model_id": "14",
-          "model_make_id": "renault",
+          "model_make_name": "renault",
+          "model_make_id": "5ed279991418c41458e779b7",
           "model_name": "Clio",
           "model_trim": "1.2 Va Va Voom",
           "model_year": "2012",
@@ -446,7 +459,8 @@
         },
         {
           "model_id": "15",
-          "model_make_id": "renault",
+          "model_make_name": "renault",
+          "model_make_id": "5ed279991418c41458e779b7",
           "model_name": "Clio",
           "model_trim": "3 1.4 Expression",
           "model_year": "2012",
@@ -475,7 +489,8 @@
         },
         {
           "model_id": "16",
-          "model_make_id": "renault",
+          "model_make_name": "renault",
+          "model_make_id": "5ed279991418c41458e779b7",
           "model_name": "Clio",
           "model_trim": "3 1.5 dCi Expression",
           "model_year": "2012",
@@ -505,14 +520,15 @@
       ]
     },
     {
-      "_id": "skoda",
+      "_id": "5ed7ee231a3c556873923bfa",
       "make": "Skoda",
       "make_country": "Czech Republic",
       "description": "The Czech company produces cars. The central office is located in the city of Mlada Boleslav (Czech Republic). The history of the brand dates back to 1895. The first Voiturette A car was launched in 1905. Skoda entered the Volkswagen Group holding. And in 2006, it became its most profitable division. The heart of the brand was occupied by models - Škoda Octavia and Škoda Octavia Combi. In Russia, cars are produced in Kaluga and Nizhny Novgorod. In Russia, the brand has repeatedly become the car of the year. Since 2006, the Skoda brand has hit the Guinness Book of Records. The factories where Skoda cars are manufactured are located in Slovakia, Germany, Ukraine, India, Kazakhstan and other countries.\n\nModern Skoda models: - Rapid liftback (2019); - Octavia liftback (2019); - liftback Superb (3rd generation). Most of the Czech population rides Skoda cars. The difference between the brand in a spacious and thoughtful interior, roomy trunk. The company's profit in 2016 amounted to 1.2 billion euros. 80% of cars are exported abroad. The most popular cars in China, Germany and Russia.",
       "models": [
         {
           "model_id": "17",
-          "model_make_id": "skoda",
+          "model_make_name": "skoda",
+          "model_make_id": "5ed7ee231a3c556873923bfa",
           "model_name": "Fabia",
           "model_trim": "1.2 HTP",
           "model_year": "2008",
@@ -541,7 +557,8 @@
         },
         {
           "model_id": "18",
-          "model_make_id": "skoda",
+          "model_make_name": "skoda",
+          "model_make_id": "5ed7ee231a3c556873923bfa",
           "model_name": "Fabia",
           "model_trim": "1.2 HTP Classic",
           "model_year": "2008",
@@ -570,7 +587,8 @@
         },
         {
           "model_id": "19",
-          "model_make_id": "skoda",
+          "model_make_name": "skoda",
+          "model_make_id": "5ed7ee231a3c556873923bfa",
           "model_name": "Fabia",
           "model_trim": "1.2 HTP Classic Combi",
           "model_year": "2008",
@@ -607,7 +625,8 @@
       "models": [
         {
           "model_id": "20",
-          "model_make_id": "citroen",
+          "model_make_name": "citroen",
+          "model_make_id": "5ed279a27559b00026f9ac2b",
           "model_name": "Berlingo",
           "model_trim": "1.4 Multispace Exec",
           "model_year": "2012",
@@ -636,7 +655,8 @@
         },
         {
           "model_id": "49683",
-          "model_make_id": "citroen",
+          "model_make_name": "citroen",
+          "model_make_id": "5ed279a27559b00026f9ac2b",
           "model_name": "Berlingo",
           "model_trim": "1.4i",
           "model_year": "2012",
@@ -665,7 +685,8 @@
         },
         {
           "model_id": "21",
-          "model_make_id": "citroen",
+          "model_make_name": "citroen",
+          "model_make_id": "5ed279a27559b00026f9ac2b",
           "model_name": "Berlingo",
           "model_trim": "1.6",
           "model_year": "2012",
@@ -702,7 +723,8 @@
       "models": [
         {
           "model_id": "22",
-          "model_make_id": "Hyundai",
+          "model_make_name": "Hyundai",
+          "model_make_id": "5ed279ab4f0f162bb72685f2",
           "model_name": "Accent",
           "model_trim": "GLS 4dr Sedan (1.6L 4cyl 6A)",
           "model_year": "2019",
@@ -712,7 +734,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "210",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Automatic",
@@ -731,7 +753,8 @@
         },
         {
           "model_id": "23",
-          "model_make_id": "Hyundai",
+          "model_make_name": "Hyundai",
+          "model_make_id": "5ed279ab4f0f162bb72685f2",
           "model_name": "Accent",
           "model_trim": "GLS 4dr Sedan (1.6L 4cyl 6M)",
           "model_year": "2019",
@@ -741,7 +764,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "150",
           "model_0_to_100_kph": null,
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Manual",
@@ -760,7 +783,8 @@
         },
         {
           "model_id": "24",
-          "model_make_id": "Hyundai",
+          "model_make_name": "Hyundai",
+          "model_make_id": "5ed279ab4f0f162bb72685f2",
           "model_name": "Accent",
           "model_trim": "GS 4dr Hatchback (1.6L 4cyl 6A)",
           "model_year": "2019",
@@ -789,7 +813,8 @@
         },
         {
           "model_id": "25",
-          "model_make_id": "Hyundai",
+          "model_make_name": "Hyundai",
+          "model_make_id": "5ed279ab4f0f162bb72685f2",
           "model_name": "Accent",
           "model_trim": "GS 4dr Hatchback (1.6L 4cyl 6M)",
           "model_year": "2019",
@@ -800,7 +825,7 @@
           "model_engine_type": "Inline",
           "model_engine_fuel": "Regular Unleaded",
           "model_top_speed_kph": null,
-          "model_0_to_100_kph": null,
+          "model_0_to_100_kph": "190",
           "model_drive": "Front Wheel Driv",
           "model_transmission_type": "Manual",
           "model_seats": null,
@@ -826,7 +851,8 @@
       "models": [
         {
           "model_id": "26",
-          "model_make_id": "suzuki",
+          "model_make_name": "suzuki",
+          "model_make_id": "5ed279d47e776183b469bf95",
           "model_name": "Grand Vitara",
           "model_trim": "Premium 4WD",
           "model_year": "2013",
@@ -836,7 +862,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "in-line",
           "model_engine_fuel": "Gasoline",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "210",
           "model_0_to_100_kph": null,
           "model_drive": "Rear",
           "model_transmission_type": "automatic",
@@ -855,7 +881,8 @@
         },
         {
           "model_id": "2",
-          "model_make_id": "suzuki",
+          "model_make_name": "suzuki",
+          "model_make_id": "5ed279d47e776183b469bf95",
           "model_name": "Grand Vitara",
           "model_trim": "Premium RWD",
           "model_year": "2013",
@@ -865,7 +892,7 @@
           "model_engine_cyl": "4",
           "model_engine_type": "in-line",
           "model_engine_fuel": "Gasoline",
-          "model_top_speed_kph": null,
+          "model_top_speed_kph": "270",
           "model_0_to_100_kph": null,
           "model_drive": "Rear",
           "model_transmission_type": "automatic",

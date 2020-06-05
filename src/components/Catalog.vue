@@ -3,14 +3,15 @@
     <h2> Found {{ total }} ads</h2>
     <b-card-group columns>
       <div v-for="model in list" :key="model.id">
+          <router-link  :to="{ name: 'product', params: { make_id: model.model_make_id, model_id: model.model_id} }" >
         <b-card img-src="https://static.av.by/images/noimage.png"
                 img-top
-                img-alt="Car"
-                class="col">
+                img-alt="Card image"
+                class="mb-3">
           <b-card-text class="align-bottom">
             <div class="row">
               <div class="col-sm-12">
-                <span><strong>{{ model.model_make_id }} {{ model.model_name }}, <span>{{ model.model_year }}</span></strong></span>
+                <span><strong>{{ model.model_make_name }} {{ model.model_name }}, <span>{{ model.model_year }}</span></strong></span>
               </div>
               <div class="col-sm-12 text-truncate">
                 <span>{{ model.model_transmission_type }}, {{ model.model_trim }}, {{ model.model_engine_fuel }}</span>
@@ -18,6 +19,7 @@
             </div>
           </b-card-text>
         </b-card>
+          </router-link>
       </div>
     </b-card-group>
     <div class="row">
@@ -34,10 +36,13 @@
 </template>
 
 <script>
-  import { mapState } from "vuex";
+  import { mapActions, mapState } from 'vuex';
 
   export default {
     name: "Catalog",
+    created() {
+      this.getProducts();
+    },
     data() {
       return {
         perPage: 6,
@@ -54,9 +59,11 @@
         )
       },
   },
+    methods: {
+      ...mapActions("products", ["getProducts"]),
+    },
   }
 </script>
-
 <style scoped>
 
 </style>

@@ -2,6 +2,7 @@ import products from '../../data/products.json';
 
 const state = () => ({
   all: [],
+  one: null,
   total: 0,
 });
 
@@ -11,7 +12,13 @@ const mutations = {
   setProducts (state, products) {
     state.all = products
     state.total = products.reduce((acc, product) => acc += product.models.length, 0)
+  },
+
+  setProduct(state, data) {
+    const makes = state.all.find((make) => make._id === data.make_id)
+    makes && (state.one = makes.models.find((model) => model.model_id === data.model_id))
   }
+
 };
 
 const actions = {
@@ -22,6 +29,9 @@ const actions = {
     }
     commit('setProducts', localProducts ? JSON.parse(localProducts) : products.makes);
   },
+  getProduct: ({ commit }, data)=>{
+   commit('setProduct', data)
+  }
 };
 
 export default {
