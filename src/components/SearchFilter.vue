@@ -26,7 +26,7 @@
   export default {
     name: "SearchFilter",
     computed: {
-      ...mapState({
+        ...mapState({
         brands: state => state.products.brands,
         models: state => state.products.models,
         years: state => state.products.years,
