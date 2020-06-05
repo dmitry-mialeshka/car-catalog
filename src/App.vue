@@ -1,26 +1,18 @@
 <template>
   <div id="app">
-    <SearchFilter />
-    <Catalog />
+      <router-view></router-view>
     <Footer />
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex';
-import Catalog from './components/Catalog';
 import Footer from './components/Footer';
-import SearchFilter from './components/SearchFilter';
 
 export default {
   name: 'App',
-  created() {
-    this.setProducts();
-  },
   components: {
-    Catalog,
-    Footer,
-    SearchFilter
+    Footer
   },
   computed: {},
   methods: {

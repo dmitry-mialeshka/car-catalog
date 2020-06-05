@@ -8,10 +8,12 @@ const SET_SEARCH = 'SET_SEARCH';
 const SET_BRANDS = 'SET_BRANDS';
 const SET_MODELS = 'SET_MODELS';
 const SET_YEARS = 'SET_YEARS';
+const SET_PRODUCT = 'SET_PRODUCT';
 
 const state = () => ({
   loading: false,
   all: [],
+  one: null,
   brands: [],
   models: [],
   years: [],
@@ -34,7 +36,11 @@ const mutations = {
   [SET_YEARS] (state, models) { state.years = Array.from(new Set(models.map(m => m.model_year))) },
   [SET_TOTAL] (state, products) { state.total = products.reduce((acc, product) => acc += product.models.length, 0) },
   [SET_SEARCH] (state, search) { state.search = search },
-  [SET_SEARCH_PRODUCTS] (state, products) { state.searchProducts = products }
+  [SET_SEARCH_PRODUCTS] (state, products) { state.searchProducts = products },
+  [SET_PRODUCT] (state, data){
+   const makes = state.all.find((make) => make._id === data.make_id)
+   makes && (state.one = makes.models.find((model) => model.model_id === data.model_id))
+  }
 };
 
 const actions = {
@@ -55,6 +61,9 @@ const actions = {
     commit(SET_SEARCH_PRODUCTS, parsedProducts);
     commit(SET_TOTAL, parsedProducts);
     commit(SET_LOADING, false);
+  },
+  getProduct: ({ commit }, data)=>{
+    commit(SET_PRODUCT, data)
   },
   setSearch: ({ commit}, search) => {
     commit(SET_SEARCH, search);

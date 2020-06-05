@@ -70,7 +70,7 @@ import {mapActions, mapState} from 'vuex';
 export default {
   name: "Product",
   created() {
-      this.getProducts()
+      this.setProducts()
       this.getProduct(this.$route.params)
       const { model_make_id,...make } = this.product
       this.items = Object.entries(make).filter(([key,]) => key !== 'model_id').map(([key, value]) => ({ characteristic: key, value: value || 'none' }));
@@ -85,10 +85,10 @@ export default {
     },
     computed: mapState({
         product: (state) => state.products.one,
-        products: state => state.products.all
+        products: state => state.products.all,
   }),
     methods:{
-        ...mapActions("products",["getProduct","getProducts"])
+        ...mapActions("products",["getProduct","setProducts"])
     }
 };
 </script>
