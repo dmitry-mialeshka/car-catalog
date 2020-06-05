@@ -7,8 +7,7 @@
         <b-card img-src="https://static.av.by/images/noimage.png"
                 img-top
                 img-alt="Card image"
-                class="mb-3"
-        >
+                class="mb-3">
           <b-card-text class="align-bottom">
             <div class="row">
               <div class="col-sm-12">
@@ -37,7 +36,7 @@
 </template>
 
 <script>
-  import {mapActions, mapState} from 'vuex';
+  import { mapActions, mapState } from 'vuex';
 
   export default {
     name: "Catalog",

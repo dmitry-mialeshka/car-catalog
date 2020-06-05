@@ -221,8 +221,7 @@
           "model_lkm_hwy": "37.0",
           "model_lkm_mixed": "29.0",
           "model_lkm_city": "25.0",
-          "model_fuel_cap_l": "18",
-          "price_dol": "68565"
+          "model_fuel_cap_l": "18"
         }
       ]
     },

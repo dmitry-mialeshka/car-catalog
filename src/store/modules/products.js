@@ -13,14 +13,13 @@ const mutations = {
     state.all = products
     state.total = products.reduce((acc, product) => acc += product.models.length, 0)
   },
+
   setProduct(state, data) {
     const makes = state.all.find((make) => make._id === data.make_id)
     makes && (state.one = makes.models.find((model) => model.model_id === data.model_id))
   }
 
 };
-
-
 
 const actions = {
   getProducts: ({ commit }) => {
