@@ -1,11 +1,11 @@
 <template>
   <div class="container">
       <div class="row">
-        <div class="col-md-8">
-            <SearchFilter/>
-        </div>
           <div class="col-md-4">
               <h2> Found {{ total }} ads</h2>
+          </div>
+          <div class="col-md-8">
+              <SearchFilter/>
           </div>
       </div>
     <b-card-group columns>
