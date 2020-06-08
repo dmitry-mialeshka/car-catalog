@@ -56,6 +56,9 @@
                        <h1>{{make.make}}</h1>
                        <p>{{make.description}}</p>
                    </div>
+                   <div class="col-md-10">
+                       <Comments/>
+                   </div>
                </div>
            </div>
        </div>
@@ -66,10 +69,12 @@
 </template>
 <script>
 import {mapActions, mapState} from 'vuex';
+import Comments from "./Comments";
 
 export default {
   name: "Product",
-  created() {
+    components: {Comments},
+    created() {
       this.setProducts()
       this.getProduct(this.$route.params)
       const { model_make_id,...make } = this.product
