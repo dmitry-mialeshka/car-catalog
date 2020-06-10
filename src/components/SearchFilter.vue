@@ -2,37 +2,41 @@
   <div class="container">
     <b-form inline>
       <b-form-select
-        v-model="makeSearch"
-        @input="search"
-        :options="getBrands"
+          v-model="makeSearch"
+          @input="search"
+          :options="getBrands"
+          size="sm"
       ></b-form-select>
       <b-form-select
-        v-model="modelSearch"
-        @input="search"
-        :options="getModels"
+          v-model="modelSearch"
+          @input="search"
+          :options="getModels"
+          size="sm"
       ></b-form-select>
       <b-form-select
-        v-model="yearSearch"
-        @input="search"
-        :options="getYears"
+          v-model="yearSearch"
+          @input="search"
+          :options="getYears"
+          size="sm"
       ></b-form-select>
     </b-form>
   </div>
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
-export default {
-  name: "SearchFilter",
-  computed: {
-    ...mapState({
-      brands: (state) => state.products.brands,
-      models: (state) => state.products.models,
-      years: (state) => state.products.years,
-      searchFilter: (state) => state.products.search,
-    }),
-    makeSearch: {
-      get() {
+  import { mapActions, mapState } from "vuex";
+
+  export default {
+    name: "SearchFilter",
+    computed: {
+      ...mapState({
+        brands: (state) => state.products.brands,
+        models: (state) => state.products.models,
+        years: (state) => state.products.years,
+        searchFilter: (state) => state.products.search,
+      }),
+      makeSearch: {
+        get() {
         return this.searchFilter.make;
       },
       set(make) {
@@ -40,7 +44,7 @@ export default {
       },
     },
     modelSearch: {
-      get() {
+        get() {
         return this.searchFilter.model;
       },
       set(model) {
@@ -48,7 +52,7 @@ export default {
       },
     },
     yearSearch: {
-      get() {
+        get() {
         return this.searchFilter.year;
       },
       set(year) {
@@ -70,14 +74,14 @@ export default {
       years.push(...this.years);
       return years;
     },
-  },
-  methods: {
-    ...mapActions({
-      setSearch: "products/setSearch",
-      search: "products/search",
-    }),
-  },
-};
+    },
+    methods: {
+      ...mapActions({
+        setSearch: "products/setSearch",
+        search: "products/search",
+      }),
+    },
+  };
 </script>
 
 <style scoped></style>

@@ -30,21 +30,35 @@ const getters = {};
 
 const mutations = {
   [SET_LOADING]: (state, loading) => state.loading = loading,
-  [SET_PRODUCTS] (state, products) { state.all = products },
-  [SET_BRANDS] (state, products) { state.brands = products.map(p => p.make) },
-  [SET_MODELS] (state, models) { state.models = Array.from(new Set(models.map(m => m.model_name))) },
-  [SET_YEARS] (state, models) { state.years = Array.from(new Set(models.map(m => m.model_year))) },
-  [SET_TOTAL] (state, products) { state.total = products.reduce((acc, product) => acc += product.models.length, 0) },
-  [SET_SEARCH] (state, search) { state.search = search },
-  [SET_SEARCH_PRODUCTS] (state, products) { state.searchProducts = products },
-  [SET_PRODUCT] (state, data){
-   const makes = state.all.find((make) => make._id === data.make_id)
-   makes && (state.one = makes.models.find((model) => model.model_id === data.model_id))
+  [SET_PRODUCTS](state, products) {
+    state.all = products
+  },
+  [SET_BRANDS](state, products) {
+    state.brands = products.map(p => p.make)
+  },
+  [SET_MODELS](state, models) {
+    state.models = Array.from(new Set(models.map(m => m.model_name))).sort();
+  },
+  [SET_YEARS](state, models) {
+    state.years = Array.from(new Set(models.map(m => m.model_year))).sort();
+  },
+  [SET_TOTAL](state, products) {
+    state.total = products.reduce((acc, product) => acc += product.models.length, 0)
+  },
+  [SET_SEARCH](state, search) {
+    state.search = search
+  },
+  [SET_SEARCH_PRODUCTS](state, products) {
+    state.searchProducts = products
+  },
+  [SET_PRODUCT](state, data) {
+    const makes = state.all.find((make) => make._id === data.make_id)
+    makes && (state.one = makes.models.find((model) => model.model_id === data.model_id))
   }
 };
 
 const actions = {
-  setProducts: ({ commit }) => {
+  setProducts: ({commit}) => {
     commit(SET_LOADING, true);
     const localProducts = localStorage.getItem('products');
     if (!localProducts) {
@@ -62,13 +76,13 @@ const actions = {
     commit(SET_TOTAL, parsedProducts);
     commit(SET_LOADING, false);
   },
-  getProduct: ({ commit }, data)=>{
+  setProduct: ({commit}, data) => {
     commit(SET_PRODUCT, data)
   },
-  setSearch: ({ commit}, search) => {
+  setSearch: ({commit}, search) => {
     commit(SET_SEARCH, search);
   },
-  search: ({ commit, state }) => {
+  search: ({commit, state}) => {
     commit(SET_LOADING, true);
     const make = state.search.make;
     const model = state.search.model;
@@ -83,18 +97,20 @@ const actions = {
     }
     if (model) {
       searchProducts = searchProducts
-      .filter(p => p.models.some(m => m.model_name === model))
-      .map(p => ({...p, models: p.models.filter(m => m.model_name === model )}));
+        .filter(p => p.models.some(m => m.model_name === model))
+        .map(p => ({...p, models: p.models.filter(m => m.model_name === model)}));
+      models = searchProducts.map(p => p.models).reduce((acc, arr) => acc.concat(...arr), []);
     }
     if (year) {
       searchProducts = searchProducts
-      .filter(p => p.models.some(m => m.model_year === year))
-      .map(p => ({...p, models: p.models.filter(m => m.model_year === year )}));
+        .filter(p => p.models.some(m => m.model_year === year))
+        .map(p => ({...p, models: p.models.filter(m => m.model_year === year)}));
     }
 
     searchProducts = searchProducts.length ? searchProducts : state.all;
 
     commit(SET_SEARCH_PRODUCTS, searchProducts);
+    commit(SET_BRANDS, searchProducts);
     commit(SET_MODELS, models);
     commit(SET_YEARS, models);
     commit(SET_TOTAL, searchProducts);

@@ -1,8 +1,8 @@
 <template>
-  <footer class="mt-auto py-4 bg-primary text-white">
+  <footer class="mt-auto py-3 bg-primary text-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-4" />
+        <div class="col-md-4"/>
         <div class="col-md-4">
           <small>&copy;IntexSoft, car-catalog UI</small>
         </div>
@@ -19,20 +19,21 @@
 </template>
 
 <script>
-export default {
-  name: "Footer",
-};
+  export default {
+    name: "Footer",
+  };
 </script>
 
 <style scoped>
-.fa {
-  padding-right: 30px;
-  font-size: 20px;
-  width: 10px;
-  color: white;
-  text-decoration: none;
-}
-.fa:hover {
-  opacity: 0.7;
-}
+  .fa {
+    padding-right: 30px;
+    font-size: 20px;
+    width: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
 </style>

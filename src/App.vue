@@ -1,39 +1,42 @@
 <template>
   <div id="app">
+    <Navbar/>
+    <div class="container">
       <router-view></router-view>
-    <Footer />
+    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import Footer from './components/Footer';
-
-export default {
-  name: 'App',
-  components: {
-    Footer
-  },
-  computed: {},
-  methods: {
-    ...mapActions('products', ['setProducts']),
-  },
-};
+  import Footer from './components/Footer';
+  import Navbar from "./components/Navbar";
+  export default {
+    name: 'App',
+    components: {
+      Navbar,
+      Footer
+    },
+    computed: {},
+    methods: {},
+  };
 </script>
 
 <style lang="scss">
   @import "index";
-html, body {
-  height: 100%;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+
+  html, body {
+    height: 100%;
+  }
+
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 </style>
