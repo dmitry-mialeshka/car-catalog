@@ -7,6 +7,14 @@
          <div class="avatar">
            <img src="https://www.meme-arsenal.com/memes/8b6f5f94a53dbc3c8240347693830120.jpg" alt="">
          </div>
+           <input
+             type="text"
+             class = "reply--text--name"
+             placeholder="name"
+             v-model.trim="user"
+             maxlength="10"
+             required
+           />
          <input
            type="text"
            v-model.trim="reply"
@@ -20,10 +28,17 @@
        </div>
        <hr>
        <single-comment
-         v-for="comment in comments"
+         v-for="comment in list"
          :comment="comment"
          :key="comment.id"
        ></single-comment>
+       <Pagination
+         v-on:currentPage="setCurrentPage"
+         v-on:perPage="setPerPage"
+         :currentPage="currentPage"
+         :perPage="perPage"
+         :total="total"
+       />
       </div>
     </div>
   </div>
@@ -34,33 +49,52 @@
 import {mapActions, mapState} from "vuex";
 import singleComment from './SingleComment'
 import { v4 } from 'uuid'
+import Pagination from "./Pagination";
 export default {
   name: "Comments",
   data() {
     return {
-      reply: ''
+      reply: '',
+      user: '',
+      perPage: 2,
+      currentPage: 1,
     }
   },
   created() {
-    this.setComments();
+    this.setComments(this.product.model_id);
   },
   components: {
+    Pagination,
     singleComment
   },
 
   computed: {
-      ...mapState({
-          loading: state => state.comments.loading,
-          comments: state=> state.comments.comments
+    ...mapState({
+      loading: state => state.comments.loading,
+      comments: state=> state.comments.comments,
+      product: (state) => state.products.one,
+      total: (state)=> state.comments.total
       }),
+      list () {
+        return this.comments.slice(
+          (this.currentPage - 1) * this.perPage,
+          this.currentPage * this.perPage
+          )
+      },
   },
   methods: {
-      submitComment() {
-        if(this.reply !== '') {
-           this.setComment({id: v4(),user:'test', text:this.reply})
-          this.reply = '';
-          }
-      },
+    submitComment() {
+      if(this.reply !== '') {
+        this.setComment({id: v4(),user:this.user,model_id:this.product.model_id, text:this.reply})
+        this.reply = '';
+        }
+    },
+    setCurrentPage(value){
+        this.currentPage = value
+    },
+    setPerPage(value){
+        this.perPage = value
+    },
     ...mapActions("comments", ["setComments","setComment"]),
   },
 };
@@ -68,10 +102,8 @@ export default {
 <style scoped>
 
 .comments {
-    margin-top: 20px;
+  margin-top: 5px;
 }
-
-/* Reply component */
 .reply {
   display: flex;
   position: relative;
@@ -89,16 +121,30 @@ export default {
   height: 40px;
   border-radius: 100%;
 }
-.reply .reply--text {
-  min-height: 40px;
-  padding: 10px 10px 10px 55px;
+.reply .reply--text--name {
+  min-height: 15px;
+  padding: 10px 5px 10px 55px;
   margin-right: 10px;
+  border: 0;
+  color: #333;
+  width: 150px;
+  outline: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.reply .reply--text {
+  min-height: 10px;
+  padding: 10px 10px 10px 10px;
   border: 0;
   color: #333;
   width: 100%;
   outline: 0;
   background-color: transparent;
   box-shadow: none;
+  visibility: hidden;
+}
+.reply input.reply--text--name:valid + .reply--text{
+  visibility: visible;
 }
 .reply input.reply--text:valid {
   margin-right: 71px;

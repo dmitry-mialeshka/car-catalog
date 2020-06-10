@@ -31,12 +31,13 @@
     </b-card-group>
     <div class="row">
       <div class="col">
-        <b-pagination
-            align="center"
-            v-model="currentPage"
-            :total-rows="total"
-            :per-page="perPage"
-        ></b-pagination>
+       <Pagination
+         v-on:currentPage="setCurrentPage"
+         v-on:perPage="setPerPage"
+         :currentPage="currentPage"
+         :perPage="perPage"
+         :total="total"
+       />
       </div>
     </div>
   </div>
@@ -45,10 +46,11 @@
 <script>
   import { mapActions, mapState } from 'vuex';
   import SearchFilter from './SearchFilter';
+  import Pagination from "./Pagination";
 
   export default {
     name: "Catalog",
-      components: {SearchFilter},
+      components: {Pagination, SearchFilter},
       created() {
       this.setProducts();
     },
@@ -58,12 +60,16 @@
         currentPage: 1,
       }
     },
+
+
+
+
     computed: {
-        ...mapState({
-            loading: state => state.products.loading,
-            products: state => state.products.all,
-            searchProducts: state => state.products.searchProducts,
-            total: state => state.products.total,
+      ...mapState({
+        loading: state => state.products.loading,
+        products: state => state.products.all,
+        searchProducts: state => state.products.searchProducts,
+        total: state => state.products.total,
         }),
       list () {
         const items = this.searchProducts.map(p => p.models).reduce((acc, arr) => acc.concat(...arr), []);
@@ -74,6 +80,12 @@
       },
   },
     methods: {
+      setCurrentPage(value){
+         this.currentPage = value
+      },
+      setPerPage(value){
+          this.perPage = value
+      },
       ...mapActions("products", ["setProducts"]),
     },
   }
