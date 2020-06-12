@@ -38,12 +38,12 @@
               <div class="col-md-4 chr">
                 <div class="col-sm-2 "></div>
                 <h1>Engine volume</h1>
-                <p>{{product.model_engine_cc}}</p>
+                <p>{{ product.model_engine_cc }}</p>
               </div>
               <div class="col-md-4 chr">
                 <div class="col-sm-2"></div>
                 <h1>Engine type</h1>
-                <p>{{product.model_engine_type}}</p>
+                <p>{{ product.model_engine_type }}</p>
               </div>
               <div class="col-md-10">
                 <b-collapse id="collapse">
@@ -53,8 +53,8 @@
                 </b-collapse>
               </div>
               <div class="col-md-10">
-                <h1>{{make.make}}</h1>
-                <p>{{make.description}}</p>
+                <h1>{{ make.make }}</h1>
+                <p>{{ make.description }}</p>
               </div>
             </div>
           </div>
@@ -72,8 +72,8 @@
     created() {
       this.setProducts()
       this.setProduct(this.$route.params)
-      const {model_make_id, ...make} = this.product
-      this.items = Object.entries(make).filter(([key,]) => key !== 'model_id').map(([key, value]) => ({
+      const { model_make_id, ...make } = this.product
+      this.items = Object.entries(make).filter(([ key, ]) => key !== 'model_id').map(([ key, value ]) => ({
         characteristic: key,
         value: value || 'none'
       }));
@@ -81,7 +81,7 @@
     },
     data() {
       return {
-        fields: ['characteristic', 'value'],
+        fields: [ 'characteristic', 'value' ],
         items: [],
         make: {}
       }
@@ -91,7 +91,7 @@
       products: state => state.products.all,
     }),
     methods: {
-      ...mapActions("products", ["setProduct", "setProducts"])
+      ...mapActions("products", [ "setProduct", "setProducts" ])
     }
   };
 </script>

@@ -71,7 +71,7 @@
       },
     },
     methods: {
-      ...mapActions("products", ["setProducts"]),
+      ...mapActions("products", [ "setProducts" ]),
     },
   }
 </script>

@@ -37,43 +37,43 @@
       }),
       makeSearch: {
         get() {
-        return this.searchFilter.make;
+          return this.searchFilter.make;
+        },
+        set(make) {
+          return this.setSearch({ ...this.searchFilter, make });
+        },
       },
-      set(make) {
-        return this.setSearch({ ...this.searchFilter, make });
-      },
-    },
-    modelSearch: {
+      modelSearch: {
         get() {
-        return this.searchFilter.model;
+          return this.searchFilter.model;
+        },
+        set(model) {
+          return this.setSearch({ ...this.searchFilter, model });
+        },
       },
-      set(model) {
-        return this.setSearch({ ...this.searchFilter, model });
-      },
-    },
-    yearSearch: {
+      yearSearch: {
         get() {
-        return this.searchFilter.year;
+          return this.searchFilter.year;
+        },
+        set(year) {
+          return this.setSearch({ ...this.searchFilter, year });
+        },
       },
-      set(year) {
-        return this.setSearch({ ...this.searchFilter, year });
+      getBrands() {
+        const brands = [ { text: "Select brand", value: null } ];
+        brands.push(...this.brands);
+        return brands;
       },
-    },
-    getBrands() {
-      const brands = [{ text: "Select brand", value: null }];
-      brands.push(...this.brands);
-      return brands;
-    },
-    getModels() {
-      const models = [{ text: "Select model", value: null }];
-      models.push(...this.models);
-      return models;
-    },
-    getYears() {
-      const years = [{ text: "Select year", value: null }];
-      years.push(...this.years);
-      return years;
-    },
+      getModels() {
+        const models = [ { text: "Select model", value: null } ];
+        models.push(...this.models);
+        return models;
+      },
+      getYears() {
+        const years = [ { text: "Select year", value: null } ];
+        years.push(...this.years);
+        return years;
+      },
     },
     methods: {
       ...mapActions({
