@@ -71,7 +71,7 @@
 </template>
 <script>
 import {mapActions, mapState} from 'vuex';
-import Comments from "./Comments";
+import Comments from "./Comments/Comments";
 
 export default {
   name: "Product",

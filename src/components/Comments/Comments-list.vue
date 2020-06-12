@@ -15,11 +15,16 @@
 </template>
 <script>
 
-import { mapActions } from "vuex";
+import { mapActions, mapState } from "vuex";
 
 export default {
-  name: 'singleComment',
-  props: [ 'comment' ],
+  name: 'CommentsList',
+  props: [ 'list', 'comment' ],
+  computed: {
+    ...mapState({
+      loading: state => state.comments.loading
+    })
+  },
   methods: {
     ...mapActions({
       rm: "comments/rmComment"
