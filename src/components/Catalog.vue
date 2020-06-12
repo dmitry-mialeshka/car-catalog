@@ -60,10 +60,6 @@
         currentPage: 1,
       }
     },
-
-
-
-
     computed: {
       ...mapState({
         loading: state => state.products.loading,

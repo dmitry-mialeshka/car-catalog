@@ -14,6 +14,8 @@
             <div class="row">
               <div class="col-md-12">
                 <b-button v-b-toggle.collapse class="col-sm-12" >Show more info</b-button>
+                <hr>
+                <b-button class="col-sm-12" v-on:click="$router.go(-1)" >Go back</b-button>
               </div>
             </div>
           </b-card-text>
