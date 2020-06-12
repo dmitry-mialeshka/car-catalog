@@ -1,10 +1,10 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="light" variant="primary">
-      <b-navbar-brand href="#">
+      <b-navbar-brand href="/">
         Home
       </b-navbar-brand>
-      <SearchFilter/>
+      <SearchFilter v-if="this.$route.path==='/'"/>
     </b-navbar>
   </div>
 </template>
